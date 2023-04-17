@@ -5,6 +5,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 app.use(morgan("combined"))
 
 let numbers = [
@@ -91,7 +92,7 @@ app.post("/api/persons", (request, response) => {
 })
 
 
-const PORT = process.env.PORT || 3001
+const PORT = 3001 || process.env.PORT 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
