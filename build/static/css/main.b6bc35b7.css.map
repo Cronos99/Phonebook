@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.b6bc35b7.css","mappings":"AAAA,cACI,WAAY,CAEZ,cAAe,CADf,iBAEJ","sources":["index.css"],"sourcesContent":[".notification {\r\n    color: green;\r\n    font-style: italic;\r\n    font-size: 50px;\r\n}"],"names":[],"sourceRoot":""}
