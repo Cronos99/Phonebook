@@ -85,7 +85,7 @@ app.post("/api/persons", (request, response) => {
   }
   else {
     const phone = {name:body.name, number:body.number, id:generateId()}
-    numbers.concat(phone)
+    number = numbers.concat(phone)
     response.json(phone) 
   }
   
