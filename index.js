@@ -6,8 +6,6 @@ const Number = require('./models/number')
 var morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const { log } = require('console')
-const { request } = require('http')
 const app = express()
 
 app.use(cors())
@@ -76,12 +74,6 @@ app.delete('/api/persons/:id', (request, response) => {
     response.status(204).end()
   })
 })
-
-const generateId = () => {
-  const minId = numbers.length > 0 ? Math.max(...numbers.map(n => n.id)):0
-  return minId+1
-}
-
 
 app.post("/api/persons", (request, response) => {
   const body = request.body
